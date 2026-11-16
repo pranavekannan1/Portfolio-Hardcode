@@ -34,7 +34,6 @@ nav .navbar {
     list-style: none;
     padding: 20px 20px 20px 20px;
     margin: 50px 50px 50px 50px;
-    color: rgb(7, 255, 197);
     font-weight: bold;
     font-size: 20px;
     display: flex;
@@ -81,4 +80,24 @@ article {
 
 * {
     box-sizing: border-box;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project-container article{
+    flex: 1 1 calc(33.333% - 20px);
+    border: 1px solid #4c3d3d;
+    padding: 15px;
+    background-color:  #ff5555;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    
+}
+
+.project-container hover .project {
+    background-color: #ff5555;
 }
