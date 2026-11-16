@@ -1,3 +1,12 @@
+:root {
+    --background-color: #f7f5f0;
+    --surface: #ffffff;
+    --text: #252525;
+    --muted: #888888;
+    --accent: #77736c;
+    --border:#e7e1d8;
+}
+    
 body {
     background-color: yellow;
     font-family: Arial, sans-serif;
@@ -92,12 +101,12 @@ article {
     flex: 1 1 calc(33.333% - 20px);
     border: 1px solid #4c3d3d;
     padding: 15px;
-    background-color:  #ff5555;
+    background-color:  #fff7f7;
     border-radius: 8px;
     transition: background-color 0.3s ease;
     
 }
 
-.project-container hover .project {
+.project-container:hover article {
     background-color: #ff5555;
 }
