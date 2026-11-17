@@ -3,7 +3,7 @@
     --surface: #244343;
     --text: #F1EDE4;
     --muted: #B8C5BD;
-    --accent: #C47B50;
+    --accent: #5278F5;
     --border: #3B5752;
 }
     
@@ -110,5 +110,118 @@ article {
 }
 
 .project-container:hover article {
+    background-color: white;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 50px;
+    align-items: center;
+    padding: 80px 40px;
+}
+
+.hero h1 {
+    font-size: clamp(3rem, 7vw, 5.5rem);
+    line-height: 1.05;
+    letter-spacing: -3px;
+    color: var(--text);
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    font-size: clamp(1.3rem, 2.5vw, 2rem);
+    color: var(--accent);
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.hero-content > p:not(.hero-label) {
+    color: var(--muted);
+    font-size: 1.1rem;
+    line-height: 1.8;
+    max-width: 600px;
+}
+.hero-label {
+    color: var(--accent);
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 16px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.hero-buttons a {
+    display: inline-block;
+    padding: 14px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.hero-buttons a:first-child {
     background-color: var(--accent);
+    color: white;
+}
+
+.hero-buttons a:last-child {
+    border: 1px solid var(--border);
+    color: var(--text);
+}
+
+.hero-buttons a:hover {
+    transform: translateY(-4px);
+}
+
+.hero-panel {
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 32px;
+}
+
+.hero-panel h3 {
+    color: var(--text);
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+}
+
+.hero-panel p {
+    color: var(--accent);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.hero-panel ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.hero-panel li {
+    color: var(--muted);
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+@media (max-width: 768px) {
+
+    .hero {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding: 50px 20px;
+    }
+
+    .hero h1 {
+        letter-spacing: -1.5px;
+    }
+
 }
