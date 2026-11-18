@@ -181,13 +181,6 @@ article {
     transform: translateY(-4px);
 }
 
-.hero-panel {
-    background-color: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 16px;
-    padding: 32px;
-}
-
 .hero-panel h3 {
     color: var(--text);
     font-size: 1.5rem;
@@ -223,5 +216,110 @@ article {
     .hero h1 {
         letter-spacing: -1.5px;
     }
+nav {
+    display: block;
+    width: 100%;
+}
 
+nav .navbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin: 10px;
+    padding: 10px;
+}
+
+nav .navbar a {
+    display: inline-block;
+    color: var(--text);
+    font-size: 15px;
+}
+}
+
+.hero-panel {
+    background: #0B1D20;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    overflow: hidden;
+    padding: 0;
+    box-shadow: 0 0 35px rgba(82, 120, 245, 0.08);
+}
+
+.terminal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+}
+
+.terminal-dots {
+    display: flex;
+    gap: 7px;
+}
+
+.terminal-dots span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--accent);
+}
+
+.terminal-title {
+    color: var(--muted);
+    font-size: 0.8rem;
+}
+
+.terminal-status {
+    color: #66E3B4;
+    font-size: 0.7rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.terminal-body {
+    padding: 25px;
+}
+
+.terminal-body h3 {
+    color: var(--text);
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.terminal-command {
+    color: var(--accent);
+    font-family: Consolas, monospace;
+    font-size: 0.9rem;
+    margin-top: 20px;
+}
+
+.terminal-command span {
+    color: #66E3B4;
+    font-weight: bold;
+}
+
+.terminal-role {
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+.terminal-body ul {
+    list-style: none;
+    padding: 0;
+}
+
+.terminal-body li {
+    color: var(--text);
+    padding: 9px 0;
+    border-bottom: 1px solid rgba(59, 87, 82, 0.5);
+    font-size: 0.9rem;
+}
+
+.terminal-body li::before {
+    content: "> ";
+    color: var(--accent);
 }
